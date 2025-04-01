@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "1d7ca88e-580e-43ee-97ff-b4927c260b77",
+		"name": "Polygon Token API",
+		"description": "Коллекция для тестирования API работы с токенами Polygon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32136100"
+	},
+	"item": [
+		{
+			"name": "Уровень A: Баланс адреса",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/api/v1/balance/0x51f1774249Fc2B0C2603542Ac6184Ae1d048351d/"
+			},
+			"response": []
+		},
+		{
+			"name": "Уровень E: Информация о токене",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}/api/v1/token/info/"
+			},
+			"response": []
+		},
+		{
+			"name": "Уровень B: Получение балансов нескольких адресов одновременно.",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"exec": [
+					""
+				],
+				"type": "text/javascript"
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"exec": [
+					""
+				],
+				"type": "text/javascript"
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000"
+		}
+	]
+}
